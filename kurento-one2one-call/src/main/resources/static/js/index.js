@@ -181,7 +181,7 @@ function incomingCall(message) {
 			onicecandidate : onIceCandidate,
 			onerror : onError
 		}
-		webRtcPeer = new kurentoUtils.WebRtcPeer.WebRtcPeerSendrecv(options,
+		webRtcPeer = new kurentoUtils.WebRtcPeer.WebRtcPeerRecvonly(options,
 				function(error) {
 					if (error) {
 						return console.error(error);
