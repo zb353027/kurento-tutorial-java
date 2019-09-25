@@ -188,6 +188,14 @@ function incomingCall(message) {
 					}
 					webRtcPeer.generateOffer(onOfferIncomingCall);
 				});
+/*		webRtcPeer = new kurentoUtils.WebRtcPeer.WebRtcPeerSendrecv(options,
+				function(error) {
+					if (error) {
+						return console.error(error);
+					}
+					webRtcPeer.generateOffer(onOfferIncomingCall);
+				});
+		new kurentoUtils.WebRtcPeer.WebRtcPeerRecvonly()*/
 
 	} else {
 		var response = {
